@@ -1,0 +1,54 @@
+.clouds {
+    position: absolute;
+}
+
+.cloud1 img {
+    position: absolute;
+    top:10vh;
+    left: 10vh;
+    max-width: 30vh;
+    max-height: 35vh;
+    animation: cloud1 2000s infinite linear;
+    
+}
+
+#cloud2 img {
+    position: absolute;
+    top:30vh;
+    left: 45vh;
+    max-width: 30vh;
+    max-height: 35vh;
+    animation: cloud2 1000s infinite linear;
+}
+
+@keyframes cloud1 {
+    from {
+        left: 0;
+        transform: translatex(50%);
+        opacity: 0;
+    }
+    0.2%{
+        opacity: 1;
+    }
+    to{
+        left: 100%;
+        transform: translateX(500vw)
+    }
+}
+
+@keyframes cloud2 {
+    from {
+        left: 0;
+        transform: translatex(300%);
+        opacity: 0;
+    }
+    0.5%{
+        opacity: 1;
+    }
+
+    to{
+        left: 100%;
+        transform: translateX(500vw)
+    }
+}
+

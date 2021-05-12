@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 500vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one {
+    background: #00bff3
+}
+
+
+.two {
+    background: #00bff3;
+}
+
+.three {
+    background: #00bff3;
+}
+
+.four {
+    background: #00bff3;
+}
+
+.five {
+    background: #00bff3;
+}
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.grassground {
+    position: absolute;
+    left: 0;
+    top: 80%;
+    width: 500vw;
+    height: 90%;
+}
+
+#ground {
+    width: 100%;
+    background-image: url(./assests/ground.png);
+    position: absolute;
+    height: 100%;
+}
+
+#grass {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        background-image: url(./assests/grass.png);
+        z-index: 1;
+}
+
+.stand1 {
+    max-width: 40vw;
+    max-height: 28vh;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 52%;
+    left: 5vw;   
+    display: block;
+}
+
+.stand2 {
+    max-width: 40vw;
+    max-height: 28vh;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 52%;
+    left: 5vw;  
+    display: none; 
+}
+
+
+
+
+
+
+

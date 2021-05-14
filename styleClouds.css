@@ -1,5 +1,6 @@
 .clouds {
     position: absolute;
+    z-index: 1;
 }
 
 .cloud1 img {

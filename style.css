@@ -12,7 +12,7 @@
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 500vw;
+  width: 7680px;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }

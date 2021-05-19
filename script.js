@@ -9,7 +9,7 @@ let sun=70;
 window.addEventListener("wheel", (event) => {
   console.log(event.deltaY);
   let e = event.deltaY;
-  if (e === 125) {
+  if (e === 125 && keyCount<=7420) {
     mountainCount = mountainCount - 1;
     mountainCount2 = mountainCount2 - 1
     sun = sun +1
@@ -18,7 +18,7 @@ window.addEventListener("wheel", (event) => {
     run.style.display = "block";
     stand.style.display = "none";
    
-  } else {
+  } else if(e===-125 && keyCount>=160){
     console.log("inapoi");
     keyCount=keyCount-100
     mountainCount = mountainCount + 1;
@@ -37,6 +37,4 @@ window.addEventListener("wheel", (event) => {
    stand.style.display = "block";
    run.style.display = "none";
    stand.style.left = `${keyCount}px`;
-   
-   
  }, 500);

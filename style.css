@@ -5,7 +5,7 @@
 }
 
 .slide {
-  width: 100vw;
+  width: 1536px;
   height: 100vh;
 }
 
@@ -56,7 +56,7 @@
   position: absolute;
   left: 0;
   top: 80%;
-  width: 500vw;
+  width: 7680px;
   height: 90%;
 }
 
@@ -84,7 +84,22 @@
   top: 52%;
   left: 60px;
   z-index: 10;
+  /* transform: rotateY(180deg); */
 }
+
+.stand2 {
+  max-width: 40vw;
+  max-height: 28vh;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 52%;
+  left: 60px;
+  z-index: 10;
+  transform: rotateY(180deg); 
+  display: none;
+}
+
 
 .character {
   position: absolute;
@@ -103,6 +118,16 @@
   z-index: 10;
 }
 
+.character-run2 {
+  position: absolute;
+  left: 6vw;
+  top: 52%;
+  left: 60px;
+  display: none;
+  z-index: 10;
+  display: none;
+}
+
 .run {
   max-width: 40vw;
   max-height: 28vh;
@@ -110,6 +135,16 @@
   left: 60px;
   top: 52%;
   z-index: 10;
+}
+
+.run2 {
+  max-width: 40vw;
+  max-height: 28vh;
+  position: absolute;
+  left: 60px;
+  top: 52%;
+  z-index: 10;
+  display: none;
 }
 
 .sun img{
@@ -134,7 +169,7 @@
     max-width: 100vw;
     max-height: 150vh;
     bottom: 19%;
-    left: 300vw ;
+    left: 400vw ;
   }
 
 

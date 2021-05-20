@@ -43,5 +43,11 @@ window.addEventListener("wheel", (event) => {
      run.style.display = "none";
      run2.style.display = "none";
      stand.style.left = `${keyCount}px`;
- }, 500);
+ }, 600);
+
+
+//  window.onscroll = function(){
+//    let scrollTop = window.pageXOffset
+//    console.log(scrollTop)
+//  }
 

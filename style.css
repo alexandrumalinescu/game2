@@ -84,7 +84,7 @@
   top: 52%;
   left: 60px;
   z-index: 10;
-  /* transform: rotateY(180deg); */
+  
 }
 
 .stand2 {
@@ -96,7 +96,6 @@
   top: 52%;
   left: 60px;
   z-index: 10;
-  transform: rotateY(180deg); 
   display: none;
 }
 
@@ -116,6 +115,7 @@
   left: 60px;
   display: none;
   z-index: 10;
+  transition: 0.2s;
 }
 
 .character-run2 {
@@ -126,6 +126,7 @@
   display: none;
   z-index: 10;
   display: none;
+  transition: 0.2s;
 }
 
 .run {
@@ -135,6 +136,7 @@
   left: 60px;
   top: 52%;
   z-index: 10;
+  transition: 0.2s;
 }
 
 .run2 {
@@ -145,6 +147,7 @@
   top: 52%;
   z-index: 10;
   display: none;
+  transition: 0.2s;
 }
 
 .sun img{
@@ -153,7 +156,7 @@
     position: absolute;
     top: 12%;
     left: 70vw;
-    transition: 1s smooth;
+    transition: 0.3s;
   }
 
   .mountain img {
@@ -162,6 +165,7 @@
     max-height: 150vh;
     bottom: 19%;
     left: 90vw ;
+    transition: 0.3s;
   }
 
   .mountain2 img {
@@ -170,6 +174,7 @@
     max-height: 150vh;
     bottom: 19%;
     left: 400vw ;
+    transition: 0.3s;
   }
 
 

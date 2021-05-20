@@ -22,6 +22,25 @@
     animation: cloud2 1000s infinite linear;
 }
 
+.cloud3 img {
+    position: absolute;
+    top:15vh;
+    left: 400vh;
+    max-width: 30vh;
+    max-height: 35vh;
+    animation: cloud3 2000s infinite linear;
+    
+}
+
+.cloud4 img {
+    position: absolute;
+    top:20vh;
+    left: 300vh;
+    max-width: 30vh;
+    max-height: 35vh;
+    animation: cloud4 1200s infinite linear;
+}
+
 @keyframes cloud1 {
     from {
         left: 0;
@@ -52,4 +71,12 @@
         transform: translateX(500vw)
     }
 }
+
+
+
+
+
+
+
+
 

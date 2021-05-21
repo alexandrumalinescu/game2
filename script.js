@@ -36,20 +36,26 @@ window.addEventListener("wheel", (event) => {
   document.querySelector('.mountain2 img').style.left=`${mountainCount2}vw`;
   document.querySelector('.sun img').style.left=`${sun}vw`
 
-  if(keyCount>=380){
+  if(keyCount>=360){
     document.querySelector('.mushroom1 img').style.display='none';
     document.querySelector('.mushroom11 img').style.display='block';
-    document.querySelector('.mushroom2 img').style.display='block';
-    document.querySelector('.mushroom21 img').style.display='none';
-    document.querySelector('.mushroom3 img').style.display='none';
-    document.querySelector('.mushroom31 img').style.display='block';
-  }else if(keyCount<=380){
-    document.querySelector('.mushroom1 img').style.display='block';
-    document.querySelector('.mushroom11 img').style.display='none';
     document.querySelector('.mushroom2 img').style.display='none';
     document.querySelector('.mushroom21 img').style.display='block';
+    document.querySelector('.mushroom3 img').style.display='none';
+    document.querySelector('.mushroom31 img').style.display='block';
+  }else if(keyCount<=360){
+    document.querySelector('.mushroom1 img').style.display='block';
+    document.querySelector('.mushroom11 img').style.display='none';
+    document.querySelector('.mushroom2 img').style.display='block';
+    document.querySelector('.mushroom21 img').style.display='none';
     document.querySelector('.mushroom3 img').style.display='block';
     document.querySelector('.mushroom31 img').style.display='none'
+  }
+
+  if(keyCount>=159){
+    document.querySelector('.popup').style.display='none'
+  }else if(keyCount<=60){
+    document.querySelector('.popup').style.display='block'
   }
 });
 

@@ -33,9 +33,9 @@
 }
 
 .cloud4 img {
-    position: absolute;
+    position: relative;
     top:20vh;
-    left: 300vh;
+    left: 170vw;
     max-width: 30vh;
     max-height: 35vh;
     animation: cloud4 1200s infinite linear;
@@ -71,6 +71,58 @@
         transform: translateX(500vw)
     }
 }
+
+.raindrop {
+    position: relative;
+    left: 166vw;
+    top:30vh;
+}
+
+.rain {
+    height: 0.4vh;
+    width: 12vw;
+    background: linear-gradient(90deg, #fff 0%, #fff 50%, #00bff3 50%, #00bff3 0%);
+    background-size: 2vw;
+    transform: rotate(280deg);
+    animation: rain 2s linear infinite;
+    position: absolute;
+    border-radius: 50%;
+    top: 2vh;
+    
+}
+
+.one{
+    top: 4vh;
+    left: 1.5vw;
+}
+.two{
+    top: 2vh;
+    left: 3vw;
+}
+.three{
+    top: 4vh;
+    left: 1.5vw;
+}
+.four{
+    top: 2vh;
+    left: 4.5vw;
+}
+.five{
+    top: 4vh;
+    left: 6vw;
+}
+.six{
+    top: 2vh;
+    left: 7.5vw;
+}
+
+@keyframes rain {
+    100% {
+        background-position: -20vw;
+    }
+}
+
+
 
 
 

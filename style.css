@@ -5,14 +5,14 @@
 }
 
 .slide {
-  width: 1536px;
+  width: 1556px;
   height: 100vh;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
-  width: 7680px;
+  width: 7780px;
   transform: rotate(90deg) translateY(-100vh);
   transform-origin: top left;
 }
@@ -56,7 +56,7 @@
   position: absolute;
   left: 0;
   top: 80%;
-  width: 7680px;
+  width: 7780px;
   height: 90%;
 }
 

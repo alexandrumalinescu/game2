@@ -10,9 +10,9 @@ window.addEventListener("wheel", (event) => {
   console.log(event.deltaY);
   let e = event.deltaY;
   if (e === 125 && keyCount<=7420) {
-    mountainCount = mountainCount - 1;
-    mountainCount2 = mountainCount2 - 1
-    sun = sun +1
+    mountainCount = mountainCount + 1;
+    mountainCount2 = mountainCount2 + 1
+    sun = sun +4
     keyCount = keyCount + 100;
     console.log("inainte");
     run.style.display = "block";
@@ -21,9 +21,9 @@ window.addEventListener("wheel", (event) => {
   } else if(e===-125 && keyCount>=160){
     console.log("inapoi");
     keyCount=keyCount-100
-    mountainCount = mountainCount + 1;
-    mountainCount2 = mountainCount2 + 1;
-    sun = sun -1
+    mountainCount = mountainCount - 1;
+    mountainCount2 = mountainCount2 - 1;
+    sun = sun -4
   
     run.style.display='none'
     run2.style.display='block';
@@ -35,6 +35,22 @@ window.addEventListener("wheel", (event) => {
   document.querySelector('.mountain img').style.left=`${mountainCount}vw`;
   document.querySelector('.mountain2 img').style.left=`${mountainCount2}vw`;
   document.querySelector('.sun img').style.left=`${sun}vw`
+
+  if(keyCount>=360){
+    document.querySelector('.mushroom1 img').style.display='none';
+    document.querySelector('.mushroom11 img').style.display='block';
+    document.querySelector('.mushroom21 img').style.display='none';
+    document.querySelector('.mushroom2 img').style.display='block';
+    document.querySelector('.mushroom3 img').style.display='none';
+    document.querySelector('.mushroom31 img').style.display='block';
+  }else if(keyCount<=360){
+    document.querySelector('.mushroom1 img').style.display='block';
+    document.querySelector('.mushroom11 img').style.display='none';
+    document.querySelector('.mushroom21 img').style.display='block';
+    document.querySelector('.mushroom2 img').style.display='none';
+    document.querySelector('.mushroom3 img').style.display='block';
+    document.querySelector('.mushroom31 img').style.display='none'
+  }
 });
 
  setInterval(() => {

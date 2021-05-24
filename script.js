@@ -53,9 +53,16 @@ window.addEventListener("wheel", (event) => {
   }
 
   if(keyCount>=159){
-    document.querySelector('.popup').style.display='none'
+    document.querySelector('.popup').style.display='none';
   }else if(keyCount<=60){
-    document.querySelector('.popup').style.display='block'
+    document.querySelector('.popup').style.display='block';
+  }
+
+  if(keyCount>=2360){
+    document.querySelector('.plant1').style.display='block';
+    document.querySelector('.plant2').style.display='block';
+    document.querySelector('.plant3').style.display='block';
+    document.querySelector('.plant4').style.display='block';
   }
 });
 

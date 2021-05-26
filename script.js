@@ -68,6 +68,10 @@ window.addEventListener("wheel", (event) => {
   if(keyCount>=3060){
     document.querySelector('.birds').style.display='block';
   }
+
+  if(keyCount>=5700){
+    document.querySelector('.projects').style.display='flex';
+  }
 });
 
  setInterval(() => {

@@ -729,15 +729,16 @@
   color: white;
   display: flex;
   justify-content: center;
+  display: none;
 }
 
 @keyframes projects {
   0%{
-    left: 533vw;
+    top: -100vh;
   }
 
   100%{
-    left: 433vw;
+    top: 12vh;
   }
 }
 

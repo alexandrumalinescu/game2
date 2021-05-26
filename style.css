@@ -666,7 +666,7 @@
 }
 .sleeping_text span:nth-child(3){
   animation: sleeping 6s linear;
-  animation-delay: 3s
+  animation-delay: 3s;
   animation-iteration-count: infinite;
 }
 .sleeping_text span:nth-child(4){
@@ -713,6 +713,43 @@
     top: 15vh;
     opacity: 0;
   }
+}
+
+.projects {
+  position: absolute;
+  border: 4px solid white;
+  border-radius: 20px;
+  top:12vh;
+  width: 40vw;
+  height: 55vh;
+  left: 433vw;
+  animation: projects 1s linear forwards;
+  transition: 1s;
+  font-family: frankfurter-medium-plain;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes projects {
+  0%{
+    left: 533vw;
+  }
+
+  100%{
+    left: 433vw;
+  }
+}
+
+.projects:hover{
+  transform:scale(1.05);
+  transition: 1s;
+}
+
+.projects p{
+  justify-content: center;
+  font-size: 22px;
+  margin-top: 5px;
 }
 
 

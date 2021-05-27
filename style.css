@@ -728,8 +728,10 @@
   font-family: frankfurter-medium-plain;
   color: white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   display: none;
+  
 }
 
 @keyframes projects {
@@ -742,15 +744,77 @@
   }
 }
 
-.projects:hover{
+/* .projects:hover{
   transform:scale(1.05);
   transition: 1s;
-}
+} */
 
 .projects p{
   justify-content: center;
   font-size: 22px;
   margin-top: 5px;
+}
+
+.slider {
+  max-width: 30vw;
+  max-height: 30vh;
+  margin-top:2em;
+  transition: 0.4s;
+}
+
+.slider .slider-items .item img {
+  max-width: 100%;
+  border-radius: 5px;
+  display: block;
+  transition: 0.4s;
+}
+
+.slider .slider-items .item{
+  display: none;
+  transition: 0.4s;
+}
+
+.slider .slider-items .item.active{
+  display: block;
+  transition: 0.4s;
+}
+
+.slider .left-slide {
+  font-size: 20px;
+  position: absolute;
+  left: 1px;
+  top: 20vh;
+  cursor: pointer;
+}
+.slider .left-slide:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+}
+
+.slider .right-slide {
+  font-size: 20px;
+  position: absolute;
+  right: 0px;
+  top: 20vh;
+  cursor: pointer;
+
+}
+.slider .right-slide:hover{
+  transform: scale(1.2);
+  transition: 0.4s;
+} 
+
+.description {
+  position: relative;
+  top: 15px;
+  max-width: 30vw;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.left-slide img, .right-slide img {
+  width: 4vw;
+  height: 9vh;
 }
 
 

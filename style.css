@@ -731,7 +731,7 @@
   flex-direction: column;
   align-items: center;
   display: none;
-  
+  z-index: 3;
 }
 
 @keyframes projects {
@@ -748,6 +748,7 @@
   justify-content: center;
   font-size: 22px;
   margin-top: 5px;
+  
 }
 
 .slider {
@@ -806,6 +807,7 @@
   position: relative;
   top: 15px;
   max-width: 30vw;
+  
   text-align: center;
   transition: 0.4s;
 }

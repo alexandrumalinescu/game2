@@ -6,6 +6,7 @@ let keyCount = 60;
 let mountainCount = 90;
 let mountainCount2 = 300
 let sun=70;
+document.querySelector('.popupMoz').style.display='none';
 
 window.addEventListener("wheel", (event) => {
   let e = event.deltaY;
@@ -115,6 +116,7 @@ function next(direction){
   slides[index].classList.add('active')
 };
 }
+
 else if(navigator.userAgent.indexOf('Firefox' != -1)){
   console.log('firefoxxxxxx')
 
@@ -125,6 +127,7 @@ let keyCount = 60;
 let mountainCount = 90;
 let mountainCount2 = 300
 let sun=70;
+document.querySelector('.popup').style.display='none';
 
   window.addEventListener('keydown', event=>{
     let key=event.key;
@@ -172,9 +175,9 @@ let sun=70;
   }
 
   if(keyCount>=159){
-    document.querySelector('.popup').style.display='none';
+    document.querySelector('.popupMoz').style.display='none';
   }else if(keyCount<=60){
-    document.querySelector('.popup').style.display='block';
+    document.querySelector('.popupMoz').style.display='block';
   }
 
   if(keyCount>=2360){
@@ -237,6 +240,5 @@ function next(direction){
 };
  
 }
-
 
 

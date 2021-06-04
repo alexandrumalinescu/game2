@@ -216,6 +216,39 @@
     animation: textsc 2s linear infinite;
   }
 
+  .popupMoz {
+    position: absolute;
+    padding: 5px;
+    width: 300px;
+    height: 125px;
+    background-color: white;
+    border-radius: 20px;
+    top: 40vh;
+    left: 18vw;
+    z-index: 12;
+    border: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    display: block;
+    opacity: 0.9;
+  }
+
+  .popupMoz p {
+    margin: 0 5px;
+    justify-content: center;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: frankfurter-medium-plain;
+  }
+
+  .popupMoz p span{
+    font-size: 1.2rem;
+    animation: textsc 2s linear infinite;
+  }
+
   @keyframes textsc {
     0%{
       color: white;

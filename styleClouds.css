@@ -25,7 +25,7 @@
 .cloud3 img {
     position: absolute;
     top:15vh;
-    left: 400vw;
+    left: 6144px;
     max-width: 30vh;
     max-height: 35vh;
     animation: cloud3 2000s infinite linear;
@@ -35,7 +35,7 @@
 .cloud4 img {
     position: absolute;
     top:20vh;
-    left: 170vw;
+    left: 2611px;
     max-width: 30vh;
     max-height: 35vh;
     animation: cloud4 1200s infinite linear;
@@ -52,7 +52,7 @@
     }
     to{
         left: 100%;
-        transform: translateX(500vw)
+        transform: translateX(7630px)
     }
 }
 
@@ -68,7 +68,7 @@
 
     to{
         left: 100%;
-        transform: translateX(500vw)
+        transform: translateX(7630px)
     }
 }
 

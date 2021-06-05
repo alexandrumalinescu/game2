@@ -161,8 +161,8 @@
     height: 26vh;
     position: absolute;
     top: 12%;
-    left: 70vw;
-    transition: 0.3s;
+    left: 1075px;
+    transition: 0.6s;
   }
 
   .mountain img {
@@ -670,7 +670,7 @@
   .stone {
     position: absolute;
     bottom: 19vh;
-    left: 340vw;
+    left: 5222.5px;
     z-index: 12;
   }
 

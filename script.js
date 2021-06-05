@@ -3,16 +3,16 @@ if(navigator.userAgent.indexOf('Chrome') !=-1){
 let run2 = document.querySelector('.character-run2');
 let stand = document.querySelector(".character");
 let keyCount = 60;
-let mountainCount = 90;
-let mountainCount2 = 300
+let mountainCount = 1300;
+let mountainCount2 = 4200;
 let sun=70;
 document.querySelector('.popupMoz').style.display='none';
 
 window.addEventListener("wheel", (event) => {
   let e = event.deltaY;
   if (e === 125 && keyCount<=7420) {
-    mountainCount = mountainCount + 1;
-    mountainCount2 = mountainCount2 + 1
+    mountainCount = mountainCount + 20;
+    mountainCount2 = mountainCount2 + 20
     sun = sun +4
     keyCount = keyCount + 100;
     run.style.display = "block";
@@ -20,8 +20,8 @@ window.addEventListener("wheel", (event) => {
   
   } else if(e===-125 && keyCount>=160){
     keyCount=keyCount-100
-    mountainCount = mountainCount - 1;
-    mountainCount2 = mountainCount2 - 1;
+    mountainCount = mountainCount - 20;
+    mountainCount2 = mountainCount2 - 20;
     sun = sun -4
   
     run.style.display='none'
@@ -31,8 +31,8 @@ window.addEventListener("wheel", (event) => {
   }
   run.style.left = `${keyCount}px`;
   run2.style.left = `${keyCount}px`;
-  document.querySelector('.mountain img').style.left=`${mountainCount}vw`;
-  document.querySelector('.mountain2 img').style.left=`${mountainCount2}vw`;
+  document.querySelector('.mountain img').style.left=`${mountainCount}px`;
+  document.querySelector('.mountain2 img').style.left=`${mountainCount2}px`;
   document.querySelector('.sun img').style.left=`${sun}vw`
 
   if(keyCount>=360){

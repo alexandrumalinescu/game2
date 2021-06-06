@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="./styleTrees.css">
 </head>
 <body>
+    <div id="preloader">
+
+    </div>
     <div class="outer-wrapper">
         <div class="wrapper">
             <div class="slide one"> 
@@ -258,6 +261,12 @@
                 <img src="./assests/mountain.png">
             </div>
     </div>
+    <script>
+        let loader =document.getElementById("preloader")
+        window.addEventListener("load", ()=>{
+            loader.style.display='none';
+        })
+    </script>
 </body>
-<script src="./script.js"></script>
+<scrip src="./script.js"></scrip>
 </html>

@@ -243,4 +243,8 @@ function next(direction){
  
 //}
 
+document.addEventListener('mousemove',(event)=>{
+  console.log(event.clientY)
+})
+
 

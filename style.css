@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+#preloader {
+  background: #fff url(./assests/preloader.gif) no-repeat center center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 .slide {
   width: 1556px;
   height: 100vh;
@@ -13,6 +21,7 @@
   font-family: frankfurter-medium-plain;
   src: url(./fonts/LT.ttf);
 }
+
 
 .wrapper {
   display: flex;
@@ -112,6 +121,7 @@
   left: 60px;
   transform: translateX(80);
   z-index: 10;
+  transition: all 0.2s ease-in;
 }
 
 .character-run {
@@ -121,7 +131,7 @@
   left: 60px;
   display: none;
   z-index: 10;
-  transition: 0.2s;
+  transition: all 0.2s ease-in;
 }
 
 .character-run2 {
@@ -132,7 +142,7 @@
   display: none;
   z-index: 10;
   display: none;
-  transition: 0.2s;
+  transition: all 0.2s ease;
 }
 
 .run {
@@ -142,7 +152,7 @@
   left: 60px;
   top: 52%;
   z-index: 10;
-  transition: 0.2s;
+  transition: all 0.2s ease-in;
 }
 
 .run2 {
@@ -153,7 +163,7 @@
   top: 52%;
   z-index: 10;
   display: none;
-  transition: 0.2s;
+  transition: all 0.2s ease-in;
 }
 
 .sun img{

@@ -130,6 +130,9 @@ let mountainCount = 1300;
 let mountainCount2 = 4200
 let sun=1075;
  document.querySelector('.popup').style.display='none';
+window.addEventListener('click', ()=>{
+  document.querySelector('.pressclick').style.display='none'
+})
 
   window.addEventListener('keydown', event=>{
     let key=event.key;
@@ -196,6 +199,7 @@ let sun=1075;
   if(keyCount>=5700){
     document.querySelector('.projects').style.display='flex';
   }
+  
   })
 
   setInterval(() => {
